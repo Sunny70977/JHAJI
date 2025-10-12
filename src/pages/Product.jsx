@@ -2,91 +2,122 @@ import lal from '../assets/24_Lal_Mirch_Bharua_Achar_500g_Plastic_720x.webp';
 import Mithila from '../assets/08_Mithila_Special_Mango_500g_Plastic_720x.webp';
 import pickle from '../assets/pickle-combo-sample-pack-with-garlic_11822682-e65c-4906-8870-be8668077845_720x.webp';
 
+
+
+import lalHover from '../assets/08_Mithila_Special_Mango_500g_Plastic_720x.webp';
+
+
 const Product = [
   {
     id: 1,
     image: lal,
-    name: 'Lal Mirch Bharua Achar',
-    price: 425
+    hoverimage:lalHover,
+    title: 'Lal Mirch Bharua Achar',
+    oldPrice: 450,
+    newPrice: 425,
+    weights: ['250g', '500g']  
+,
+    rating: 4.8,
+    reviews: 120,
   },
   {
     id: 2,
     image: Mithila,
-    name: 'Kuccha Mango Pickle',
-    price: 399
+    title: 'Kuccha Mango Pickle',
+    oldPrice: 420,
+    newPrice: 399,
+    weights: ['250g', '500g']  
+,
+    rating: 1.2,
+    reviews: 30,
   },
   {
     id: 3,
-    image:pickle ,
-    name: 'Lemon Pickle',
-    price: 375
+    image: pickle,
+    title: 'Lemon Pickle',
+    oldPrice: 400,
+    newPrice: 375,
+    weights: ['250g', '500g']  
+,
+    rating: 2,
+    reviews: 50,
   },
   {
-    id: 1,
+    id: 4,
     image: lal,
-    name: 'Lal Mirch Bharua Achar',
-    price: 425
+    title: 'Lal Mirch Bharua Achar',
+    oldPrice: 450,
+    newPrice: 425,
+    weights: ['250g', '500g']  
+,
+    rating: 4.7,
+    reviews: 110,
   },
-  ,
   {
-    id: 1,
+    id: 5,
     image: lal,
-    name: 'Lal Mirch Bharua Achar',
-    price: 425
-  },,
+    title: 'Lal Mirch Bharua Achar',
+    oldPrice: 450,
+    newPrice: 425,
+    weights: ['250g', '500g']  
+,
+    rating: 3.6,
+    reviews: 70,
+  },
   {
-    id: 1,
+    id: 6,
     image: lal,
-    name: 'Lal Mirch Bharua Achar',
-    price: 425
-  },,
+    title: 'Lal Mirch Bharua Achar',
+    oldPrice: 450,
+    newPrice: 425,
+    weights: ['250g', '500g']  
+,
+    rating: 4.9,
+    reviews: 200,
+  },
   {
-    id: 1,
+    id: 7,
     image: lal,
-    name: 'Lal Mirch Bharua Achar',
-    price: 425
-  },,
+    title: 'Lal Mirch Bharua Achar',
+    oldPrice: 450,
+    newPrice: 425,
+    weights: ['250g', '500g']  
+,
+    rating: 4.4,
+    reviews: 90,
+  },
   {
-    id: 1,
+    id: 8,
     image: lal,
-    name: 'Lal Mirch Bharua Achar',
-    price: 425
-  },,
+    title: 'Lal Mirch Bharua Achar',
+    oldPrice: 450,
+    newPrice: 425,
+    weights: ['250g', '500g']  
+,
+    rating: 4.5,
+    reviews: 95,
+  },
   {
-    id: 1,
+    id: 9,
     image: lal,
-    name: 'Lal Mirch Bharua Achar',
-    price: 425
-  },,
+    title: 'Lal Mirch Bharua Achar',
+    oldPrice: 450,
+    newPrice: 425,
+    weights: ['250g', '500g']  
+,
+    rating: 4.6,
+    reviews: 100,
+  },
   {
-    id: 1,
+    id: 10,
     image: lal,
-    name: 'Lal Mirch Bharua Achar',
-    price: 425
-  },,
-  {
-    id: 1,
-    image: lal,
-    name: 'Lal Mirch Bharua Achar',
-    price: 425
-  },,
-  {
-    id: 1,
-    image: lal,
-    name: 'Lal Mirch Bharua Achar',
-    price: 425
-  },,
-  {
-    id: 1,
-    image: lal,
-    name: 'Lal Mirch Bharua Achar',
-    price: 425
-  },,
-  {
-    id: 1,
-    image: lal,
-    name: 'Lal Mirch Bharua Achar',
-    price: 425
+    title: 'Lal Mirch Bharua Achar',
+    oldPrice: 450,
+    newPrice: 425,
+    weights: ['250g', '500g']  
+,
+    rating: 4.8,
+    reviews: 130,
   },
 ];
 

@@ -1,15 +1,20 @@
-import Products from './Product'; 
+import Products from './Product';
 import ProductCard from './Productcard';
 
 const ProductList = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-25 p-6">
+    <div className="flex flex-wrap justify-center gap-6 p-6">
       {Products.map((item) => (
         <ProductCard
           key={item.id}
           image={item.image}
-          name={item.name}
-          price={item.price}
+          title={item.title}       
+          oldPrice={item.oldPrice} 
+          newPrice={item.newPrice} 
+          weights={item.weights}     
+          rating={item.rating}     
+          reviews={item.reviews}  
+          hoverimage={item.hoverimage} 
         />
       ))}
     </div>
@@ -17,3 +22,4 @@ const ProductList = () => {
 };
 
 export default ProductList;
+
