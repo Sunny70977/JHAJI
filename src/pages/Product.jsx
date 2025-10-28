@@ -1,9 +1,9 @@
 import lal from '../assets/24_Lal_Mirch_Bharua_Achar_500g_Plastic_720x.webp';
 import Mithila from '../assets/08_Mithila_Special_Mango_500g_Plastic_720x.webp';
 import pickle from '../assets/pickle-combo-sample-pack-with-garlic_11822682-e65c-4906-8870-be8668077845_720x.webp';
-
-
-
+import mango from '../assets/MithilaSpecialMango_720x.webp'
+import poonam from '../assets/Poonam_holding_Sample_Pack_of_8_Pickles_1_720x.webp'
+import red from '../assets/StuffedRedChilliPickle_720x.webp'
 import lalHover from '../assets/08_Mithila_Special_Mango_500g_Plastic_720x.webp';
 
 
@@ -11,7 +11,7 @@ const Product = [
   {
     id: 1,
     image: lal,
-    hoverimage:lalHover,
+    hoverimage:red,
     title: 'Lal Mirch Bharua Achar',
     oldPrice: 450,
     newPrice: 425,
@@ -23,6 +23,7 @@ const Product = [
   {
     id: 2,
     image: Mithila,
+    hoverimage:mango,
     title: 'Kuccha Mango Pickle',
     oldPrice: 420,
     newPrice: 399,
@@ -34,6 +35,7 @@ const Product = [
   {
     id: 3,
     image: pickle,
+    hoverimage:poonam,
     title: 'Lemon Pickle',
     oldPrice: 400,
     newPrice: 375,

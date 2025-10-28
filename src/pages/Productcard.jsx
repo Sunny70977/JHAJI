@@ -1,4 +1,5 @@
 import { FaStar, FaRegStar, FaStarHalfAlt } from "react-icons/fa";
+import { useCart } from "../Context/CartContext"; 
 
 const ProductCard = ({
   image,
@@ -10,6 +11,8 @@ const ProductCard = ({
   rating = 0,
   reviews,
 }) => {
+  const { addToCart } = useCart(); 
+
   const stars = Array.from({ length: 5 }, (_, index) => {
     if (rating >= index + 1) {
       return <FaStar key={index} className="text-yellow-500 text-lg" />;
@@ -20,19 +23,31 @@ const ProductCard = ({
     }
   });
 
+  const handleAddToCart = () => {
+    addToCart({
+      image,
+      title,
+      price: newPrice,
+    });
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 p-4 flex flex-col items-center group w-full">
-      <div className="relative w-full h-96"> 
+      <div className="relative w-full h-96">
         <img
           src={image}
           alt={title}
           className="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-0"
         />
-        <img
-          src={hoverimage}
-          alt={`${title} alternate view`}
-          className="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
-        />
+         <img
+    src={hoverimage}
+    alt={`${title} alternate view`}
+    className="absolute top-0 left-0 w-full h-full object-cover 
+transition-all duration-700 ease-in-out delay-300 
+opacity-0 group-hover:opacity-100
+"
+
+  />
       </div>
 
       <h2 className="text-lg font-semibold text-gray-800 text-center mt-3">{title}</h2>
@@ -57,7 +72,11 @@ const ProductCard = ({
         ))}
       </select>
 
-      <button className="mt-3 bg-pink-500 hover:bg-pink-600 text-white py-2 w-full rounded font-semibold">
+     
+      <button
+        onClick={handleAddToCart}
+        className="mt-3 bg-pink-500 hover:bg-pink-600 text-white py-2 w-full rounded font-semibold"
+      >
         ADD TO CART
       </button>
     </div>

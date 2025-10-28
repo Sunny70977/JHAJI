@@ -22,7 +22,6 @@ export default function FilterSidebar({ selectedFilters, setSelectedFilters }) {
     <div className="w-64 p-4 border-r space-y-6">
       <h2 className="text-2xl font-bold">Filters</h2>
 
-      {/* Taste */}
       <div>
         <h3 className="font-semibold mb-2">Taste</h3>
         <div className="flex flex-wrap gap-2">
@@ -42,7 +41,6 @@ export default function FilterSidebar({ selectedFilters, setSelectedFilters }) {
         </div>
       </div>
 
-      {/* Ingredient */}
       <div>
         <h3 className="font-semibold mb-2">Ingredient</h3>
         <div className="flex flex-wrap gap-2">
@@ -62,7 +60,7 @@ export default function FilterSidebar({ selectedFilters, setSelectedFilters }) {
         </div>
       </div>
 
-      {/* Oil Content */}
+     
       <div>
         <h3 className="font-semibold mb-2">Oil Content</h3>
         <div className="flex flex-col gap-2">
@@ -82,7 +80,6 @@ export default function FilterSidebar({ selectedFilters, setSelectedFilters }) {
         </div>
       </div>
 
-      {/* Onion/Garlic */}
       <div>
         <h3 className="font-semibold mb-2">Has Onion/Garlic</h3>
         <div className="flex gap-2">
