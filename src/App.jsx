@@ -3,21 +3,19 @@ import Navbar from './components/Navbar/Navbar';
 import Topig from './components/Topig';
 import ProductPage from './pages/ProductPage';
 import Footer from './components/Footer';
-import ShoppingCart from './components/ShoppingCart'; 
+import ShoppingCart from './components/ShoppingCart';
 import SearchOverlay from './components/SearchOverlay';
-import LoginPage from './pages/LoginPage'; 
-import SignupPage from './pages/SignupPage';  // ✅ Add this import
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
 
 export default function App() {
   return (
     <Router>
       <div className="bg-white font-sans">
-        
         <Navbar />
 
+        
         <Routes>
-          
-          {/* Home Page */}
           <Route 
             path="/" 
             element={
@@ -28,12 +26,9 @@ export default function App() {
             } 
           />
 
-          {/* Login */}
+          {/* Pages with their own padding */}
           <Route path="/login" element={<LoginPage />} />
-
-          {/* Signup */}
-          <Route path="/signup" element={<SignupPage />} />  {/* ✅ Added route */}
-
+          <Route path="/signup" element={<SignupPage />} />
         </Routes>
 
         <Footer />

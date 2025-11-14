@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 
 export default function SignupPage() {
   return (
-    <div className="flex justify-center items-start min-h-screen bg-white p-8">
-      <div className="w-full max-w-md mt-10">
+    <div className="flex justify-center items-start min-h-screen bg-white p-8 pt-40">
+     
 
+      <div className="w-full max-w-md mt-10">
+        
         
         <header>
           <h1 className="text-5xl font-bold text-gray-900 mb-2">Register</h1>
@@ -17,7 +19,7 @@ export default function SignupPage() {
           </nav>
         </header>
 
-        
+       
         <main>
           <h2 className="text-3xl font-semibold text-gray-900 mb-6">Register</h2>
 
